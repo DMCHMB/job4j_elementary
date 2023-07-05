@@ -5,6 +5,16 @@ public class ArrayDefinition {
         short[] ages = new short[10];
         String[] surnames = new String[100500];
         float[] prices = new float[40];
+        String[] names = new String[4];
+
+        names[0] = "Petr Arsentev";
+        names[1] = "Ivan Ivanov";
+        names[2] = "John Smith";
+        names[3] = "Hans Gruber";
+
+        for (int i = 0; i < names.length; i++) {
+            System.out.println(names[i]);
+        }
 
         System.out.println(ages.length);
         System.out.println(surnames.length);
