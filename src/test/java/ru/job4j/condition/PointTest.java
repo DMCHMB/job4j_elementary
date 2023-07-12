@@ -50,7 +50,7 @@ public class PointTest {
     }
 
     @Test
-    public void when000to034then2dot82() {
+    public void when000to034then5() {
         double expected = 5;
         Point a = new Point(0, 0, 0);
         Point b = new Point(0, 3, 4);
