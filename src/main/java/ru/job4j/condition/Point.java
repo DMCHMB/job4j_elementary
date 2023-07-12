@@ -1,19 +1,17 @@
 package ru.job4j.condition;
 
 public class Point {
-    public static double distance(int x1, int y1, int x2, int y2) {
-        double rsl = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
-        return rsl;
+
+    private int x;
+
+    private int y;
+
+    public Point(int first, int second) {
+        this.x = first;
+        this.y = second;
     }
 
-    public static void main(String[] args) {
-        double result = Point.distance(0, 0, 2, 0);
-        System.out.println("result (0, 0) to (2, 0) " + result);
-        double result2 = distance(2, 4, 9, 3);
-        System.out.println("result (2, 4) to (9, 3) " + result2);
-        double result3 = distance(-5, 3, 2, 19);
-        System.out.println("result (-5, 3) to (2, 19) " + result3);
-        double result4 = distance(2, 7, 0, 9);
-        System.out.println("result (2, 7) to (0, 9) " + result4);
+    public double distance(Point that) {
+        return Math.sqrt(Math.pow(that.x - this.x, 2) + Math.pow(that.y - this.y, 2));
     }
 }
